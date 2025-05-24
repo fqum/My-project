@@ -79,6 +79,8 @@ int main() {
                 logTransaction("A user viewed all available items");
             } else if (choice == 7) {
                 system.viewUsers();
+             logTransaction("viewed Users");
+
             }
         } catch (const LibraryException& ex) {
             cout << "Error: " << ex.what() << endl;
